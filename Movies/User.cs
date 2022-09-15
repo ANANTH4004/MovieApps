@@ -10,7 +10,7 @@ using static Movies.User;
 
 namespace Movies
 {
-   // public delegate void RequestDelegate();
+   
     public class User
     {
         public static event Func<string,bool> Request;
@@ -21,11 +21,10 @@ namespace Movies
             Gold = 3,
             Platinum = 5
         }
-        public List<Movie> BorrowedMovies;
+        public List<Movie> BorrowedMovies = new List<Movie>();
         public User()
         {
-           // this.userLevel =(int) UserLevel.Silver;
-            BorrowedMovies = new List<Movie>();
+           
             
         }
         private long _UserId;

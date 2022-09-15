@@ -67,16 +67,13 @@ namespace AdminModule
                 u.userLevel = Int32.Parse(data[3]);
                 UserList.Add(u);
             }
-            foreach (var item in UserList)
-            {
-                Console.WriteLine($"User Name : {item.UserName}");
-            }
+            
         }
         public static bool Request1(string s)
         {
             Console.WriteLine($"Enter yes or no to approve {s}");
             string ans = Console.ReadLine();
-            if(ans == "yes" || ans == "Yes")
+            if(ans == "yes" || ans == "YES")
             {
                 return true;
             }
